@@ -1,114 +1,330 @@
-Assignment 1 Methods Tests
-Myra Ribeiro, 169030590
-Tests are of the form:
-  Test Operation
-  {expected value}: actual value
+Assignment 2 Methods Tests
+Author: Myra Ribeiro
+Student ID: 169030590
+Email: ribe0590@mylaurier.ca
 
-================================================================================
-Testing isLeapYear
+Compare Les Misérables to itself (expects 0): 0
+Compare Les Misérables to Ad Astra (expects > 0): 11
+Compare Les Misérables to Z (expects < 0): -7
+Compare Les Misérables (1998) to Les Misérables (1978)  (expects > 0): 1
+Compare Les Misérables (1998) to Les Misérables (2019) (expects < 0): -1
+List of genres:
+0: science fiction
+1: fantasy
+2: action
+3: drama
+4: comedy
+5: romance
+6: horror
+7: thriller
+8: documentary
+9: biography
+10: mystery
+
 ----------------------------------------
-isLeapYear(1900)
-  {false}: false
-isLeapYear(1996)
-  {true}: true
-isLeapYear(1999)
-  {false}: false
-isLeapYear(2000)
-  {true}: true
-
-================================================================================
-Testing isPalindrome
+New Movie Object:
+Title:    Dark City
+Year:     1998
+Director: Alex Proyas
+Rating:   7.8
+Genre:    science fiction
 ----------------------------------------
-isPalindrome("racecar")
-  {true}: true
-isPalindrome("A man, a plan, a canal, Panama!")
-  {true}: true
-isPalindrome("David")
-  {false}: false
-
-================================================================================
-Testing isValid
+Getters for Dark City
+Title: Dark City
+Year: 1998
+Genre (int): 0
+Genre (String): science fiction
+Directory: Alex Proyas
+Rating: 7.8
 ----------------------------------------
-isValid("a")
-  {true}: true
-isValid("_a")
-  {true}: true
-isValid("1a")
-  {false}: false
+Get Movie from keyboard:
+Title: Princess Peach
+Year: 2016
+Director: Joan Littlehood
+Rating: 8.9
+0: science fiction
+1: fantasy
+2: action
+3: drama
+4: comedy
+5: romance
+6: horror
+7: thriller
+8: documentary
+9: biography
+10: mystery
 
-================================================================================
-Testing pigLatin
+Enter a genre number: 1
+
+Title:    Princess Peach
+Year:     2016
+Director: Joan Littlehood
+Rating:   8.9
+Genre:    fantasy
 ----------------------------------------
-pigLatin("David")
-  {"Avidday"}: "Avidday"
-pigLatin("arrow")
-  {"arrowway"}: "arrowway"
-pigLatin("yard")
-  {"ardyay"}: "ardyay"
-
-================================================================================
-Testing closest
+readFood from string
+Title:    Dark City
+Year:     1998
+Director: Alex Proyas
+Rating:   7.8
+Genre:    science fiction
 ----------------------------------------
-closest(0.0, -5.0, 5.0)
-  {-5.0}: -5.0
-closest(0.0, -10.0, 5.0)
-  {5.0}: 5.0
-
-================================================================================
-Testing sumPartialHarmonic
 ----------------------------------------
-sumPartialHarmonic(0)
-  {0.000000}: 0.000000
-sumPartialHarmonic(1)
-  {1.000000}: 1.000000
-sumPartialHarmonic(8)
-  {2.717857}: 2.717857
-
-================================================================================
-Testing allDigits
+Read Movies from file:
+Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genre:    romance
+Title:    Dark City
+Year:     1998
+Director: Alex Proyas
+Rating:   7.8
+Genre:    science fiction
+Title:    Zulu
+Year:     1964
+Director: Cy Endfield
+Rating:   7.8
+Genre:    biography
+Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genre:    science fiction
+Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genre:    science fiction
+Title:    Last Man On Earth, The
+Year:     1964
+Director: Ubaldo Ragona
+Rating:   6.9
+Genre:    science fiction
+Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genre:    science fiction
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genre:    fantasy
+Title:    Juno
+Year:     2007
+Director: Jason Reitman
+Rating:   7.7
+Genre:    drama
+Title:    Darjeeling Limited, The
+Year:     2007
+Director: Wes Anderson
+Rating:   7.1
+Genre:    comedy
+Title:    Broken Flowers
+Year:     2005
+Director: Jim Jarmusch
+Rating:   7.2
+Genre:    drama
+Title:    Star Wars: Episode IV - A New Hope
+Year:     1977
+Director: George Lucas
+Rating:   8.7
+Genre:    science fiction
+Title:    Horror of Dracula
+Year:     1958
+Director: Terence Fisher
+Rating:   7.4
+Genre:    documentary
+Title:    Jason and the Argonauts
+Year:     1963
+Director: Don Chaffey
+Rating:   7.4
+Genre:    fantasy
+Title:    Wrong Box, The
+Year:     1966
+Director: Bryan Forbes
+Rating:   7.0
+Genre:    comedy
+Title:    Finding Dory
+Year:     2016
+Director: Andrew Stanton, Angus MacLane
+Rating:   7.5
+Genre:    comedy
+Title:    Manos: The Hands of Fate
+Year:     1966
+Director: Harold P. Warren
+Rating:   1.9
+Genre:    documentary
+Title:    Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies!!?, The
+Year:     1964
+Director: Ray Dennis Steckler
+Rating:   2.2
+Genre:    documentary
+Title:    Z
+Year:     1969
+Director: Costa-Gavras
+Rating:   8.2
+Genre:    action
+Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genre:    fantasy
+Title:    Zulu
+Year:     2013
+Director: Jerome Salle
+Rating:   6.7
+Genre:    action
 ----------------------------------------
-allDigits("a")
-  {false}: false
-allDigits("123")
-  {true}: true
-allDigits("12.3")
-  {false}: false
-
-================================================================================
-Testing validSn
+science fiction: 6
+fantasy: 3
+drama: 2
+romance: 2
+comedy: 3
+zombie: 1
+action: 0
+historical: 0
+horror: 3
+war: 1
+mystery: 0
 ----------------------------------------
-validSn("SN/1234-567")
-  {true}: true
-validSn("SN/1234567")
-  {false}: false
-validSn("SN/123-4567")
-  {false}: false
+Movie year: 2000
 
-================================================================================
-Testing isPrime
 ----------------------------------------
-isPrime(7)
-  {true}: true
-isPrime(5)
-  {true}: true
-isPrime(9)
-  {false}: false
-
-================================================================================
-Testing shift
 ----------------------------------------
-shift("ABC", 0)
-  {"ABC"}: "ABC"
-shift("ABC", 3)
-  {"DEF"}: "DEF"
-shift("ABC", 30)
-  {"EFG"}: "EFG"
+Movie rating: 5.9
 
-================================================================================
-Testing substitute
+Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genre:    romance
+Title:    Dark City
+Year:     1998
+Director: Alex Proyas
+Rating:   7.8
+Genre:    science fiction
+Title:    Zulu
+Year:     1964
+Director: Cy Endfield
+Rating:   7.8
+Genre:    biography
+Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genre:    science fiction
+Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genre:    science fiction
+Title:    Last Man On Earth, The
+Year:     1964
+Director: Ubaldo Ragona
+Rating:   6.9
+Genre:    science fiction
+Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genre:    science fiction
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genre:    fantasy
+Title:    Juno
+Year:     2007
+Director: Jason Reitman
+Rating:   7.7
+Genre:    drama
+Title:    Darjeeling Limited, The
+Year:     2007
+Director: Wes Anderson
+Rating:   7.1
+Genre:    comedy
+Title:    Broken Flowers
+Year:     2005
+Director: Jim Jarmusch
+Rating:   7.2
+Genre:    drama
+Title:    Star Wars: Episode IV - A New Hope
+Year:     1977
+Director: George Lucas
+Rating:   8.7
+Genre:    science fiction
+Title:    Horror of Dracula
+Year:     1958
+Director: Terence Fisher
+Rating:   7.4
+Genre:    documentary
+Title:    Jason and the Argonauts
+Year:     1963
+Director: Don Chaffey
+Rating:   7.4
+Genre:    fantasy
+Title:    Wrong Box, The
+Year:     1966
+Director: Bryan Forbes
+Rating:   7.0
+Genre:    comedy
+Title:    Finding Dory
+Year:     2016
+Director: Andrew Stanton, Angus MacLane
+Rating:   7.5
+Genre:    comedy
+Title:    Z
+Year:     1969
+Director: Costa-Gavras
+Rating:   8.2
+Genre:    action
+Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genre:    fantasy
+Title:    Zulu
+Year:     2013
+Director: Jerome Salle
+Rating:   6.7
+Genre:    action
 ----------------------------------------
-substitute("ABC", AVIBROWNZCEFGHJKLMPQSTUXYD)
-  {"AVI"}: "AVI"
-substitute("XYZ", AVIBROWNZCEFGHJKLMPQSTUXYD)
-  {"XYD"}: "XYD"
+Movie genre: 
+0: science fiction
+1: fantasy
+2: action
+3: drama
+4: comedy
+5: romance
+6: horror
+7: thriller
+8: documentary
+9: biography
+10: mystery
 
+Enter a genre number: 1
+
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genre:    fantasy
+Title:    Jason and the Argonauts
+Year:     1963
+Director: Don Chaffey
+Rating:   7.4
+Genre:    fantasy
+Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genre:    fantasy
+----------------------------------------
+Comparisons
+Compare Les Misérables to itself (expects 0): 0
+Compare Les Misérables to Ad Astra (expects > 0): 11
+Compare Les Misérables to Z (expects < 0): -7
+Compare Les Misérables (1998) to Les Misérables (1978)  (expects > 0): 1
+Compare Les Misérables (1998) to Les Misérables (2019) (expects < 0): -1
